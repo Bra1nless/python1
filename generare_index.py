@@ -9,12 +9,18 @@ ranges = [["Время", times], ["Призывы", advices], ["Суть", promi
 
 
 def generate_page(head, body):
-	page = '''<html>''' + head + body + "</html>"
+	page = "<html>" + head + body + "</html>"
 	return page
 
 def generate_head(title):
 	head = "<title>" + title + "</title>"
-	return "<head>" + head + "</head>"
+	return '''
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="style.css"
+		/>
+	<head>''' + head + "</head>"
 
 def generate_body(header, paragraphs):
 	body = "<h1>" + header + "</h1>"
@@ -27,7 +33,7 @@ def generate_body(header, paragraphs):
 
 def generate_a_body():
 	body = '''
-	<h1>О чем этот проект</h1>
+	<h1>Дима - Колбасима)))</h1>
 	<img src="11.jpg" height="100" width="100">
 	<br>
 	<ol>'''
