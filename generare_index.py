@@ -1,5 +1,3 @@
-# coding: utf-8
-
 from horoscope import generate_prophecies
 from datetime import datetime as dt
 
@@ -11,7 +9,7 @@ ranges = [["Время", times], ["Призывы", advices], ["Суть", promi
 
 
 def generate_page(head, body):
-	page = '''<html>''' + head + body + "</html>"
+	page = '''<meta charset="UTF-8"><html>''' + head + body + "</html>"
 	return page
 
 def generate_head(title):
