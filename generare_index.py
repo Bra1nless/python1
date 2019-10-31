@@ -11,7 +11,7 @@ ranges = [["Время", times], ["Призывы", advices], ["Суть", promi
 
 
 def generate_page(head, body):
-	page = "<meta charset='utf-8'><html>" + head + body + "</html>"
+	page = '''<meta charset="UTF-8"><html>''' + head + body + "</html>"
 	return page
 
 def generate_head(title):
